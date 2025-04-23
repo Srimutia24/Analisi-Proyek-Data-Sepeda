@@ -51,8 +51,8 @@ st.markdown("""
 @st.cache_data
 def load_data(start_date, end_date):
     try:
-        hours_df = pd.read_csv("hour_df.csv")
-        days_df = pd.read_csv("day_df.csv")
+        hours_df = pd.read_csv("Dashboard/hour_df.csv")
+        days_df = pd.read_csv("Dashboard/day_df.csv")
         
         # Convert date columns to datetime format
         days_df['dteday'] = pd.to_datetime(days_df['dteday'], errors='coerce')  # Convert invalid dates to NaT
